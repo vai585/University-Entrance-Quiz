@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    user-select: none;
+}
+
+html{
+    background-color:white ;
+}
+
+#quiz{
+    background-color: #ecbb30;
+    position: relative;
+    height: auto;
+    width: 900px;
+    margin: 30px auto;
+    border-radius: 40px;
+    box-shadow: 5px 7px 5px 5px rgba(0,26,51,0.5);
+    padding: 2px 50px 50px 50px;
+}
+
+.Answers{
+    background-color: white;
+    width:150px;
+    height: 30px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  #0b53a2;
+    margin:10px;
+    text-align: center;
+    font-size: 20px; 
+    font-family: sans-serif;
+}
+
+.Answers:hover{
+    background-color:lightcoral  ;
+    opacity: .5;
+    width:150px;
+    height: 30px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  maroon;
+}
+.answers{
+    display: none;
+    font-family: serif;
+    font-size: 20px;
+    background-color: white;
+    
+}
+
+
+#h1{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    background-color: white;
+    color: #0b53a2;
+    border-radius: 40px;
+    margin: 30px 10px 30px 10px;
+    padding: 2px 0px;
+}
+
+#tracker{
+    position: relative;
+    margin: 20px 10px 10px 10px;
+    padding: 0 10px 0 10px;
+}
+
+
+
+.num{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    color: maroon;
+    padding: 11px;
+    margin: 0px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 22px;
+    border: 1.5px solid white;
+}
+hr{
+    border: 2px solid black;
+    position: relative;
+    clear: both;
+}
+
+.container{
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    display: none;
+}
+
+
+.Next{
+    position: relative ;
+    background-color: white;
+    width:100px;
+    height: 40px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  #0b53a2;
+    margin:10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.Next:hover{
+    background-color: #0b53a2 ;
+    width:100px;
+    height: 40px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  #0b53a2;
+}
+
+.Submit{
+    position: relative ;
+   background-color: white;
+    width:200px;
+    height: 40px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  #0b53a2;
+    margin:10px;
+    text-align: center;
+    font-size: 30px; 
+    font-family: sans-serif;
+}
+
+.Submit:hover{
+    background-color:lightcoral  ;
+    opacity: .5;
+    width:200px;
+    height: 40px;
+    border:1.5px solid;
+    border-radius:75px;
+    border-color:  maroon;
+}
+
+
+
+
+
+
+
+footer{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.no{
+    display: none;
+}
+
+
+
+
+/*
+#quizset{
+}
+*/
+
+
+
+

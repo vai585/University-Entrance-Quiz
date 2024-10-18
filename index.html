@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="quiz">
+<header>
+    <h1 id="h1">UE Quiz</h1>
+</header>
+
+    <div id="tracker">
+        <div class="num" id="num"> 1 </div>
+        <div class="num" id="num"> 2 </div>
+        <div class="num" id="num"> 3 </div>
+        <div class="num" id="num"> 4 </div>
+        <div class="num" id="num"> 5 </div>
+        <div class="num" id="num"> 6 </div>
+        <div class="num" id="num"> 7 </div>
+        <div class="num" id="num"> 8 </div>
+        <div class="num" id="num"> 9 </div>
+        <div class="num" id="num"> 10 </div>
+    </div>
+
+    <div class="containerr"> 
+        <div class="no-box"> 
+            <span class="no">1</span> 
+        </div> 
+       
+    <div class="container">
+        <p>In NCEA, How many credits do you need to achieve for University Entrance? </p> <hr> <br>
+        <input type="radio"  class="options">100 <br> <br>
+        <input type="radio"  class="options">15 <br> <br>
+        <input type="radio"  class="options">85 <br> <br>
+        <input type="radio"  class="options" id="correct1">60 <br>
+       <button class="Next" onclick="next(1)">Next</button>  
+    </div>
+
+    <div class="container">
+       <p> How many NCEA classes do you need to get 15 credits in for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" >5 <br> <br>
+        <input type="radio" class="options" >1 <br> <br>
+        <input type="radio" class="options" id="correct2">3 <br> <br>
+        <input type="radio" class="options" >4 <br>
+        <button class="Next" onclick="next(2)">Next</button>
+    </div>
+
+
+    <div class="container">
+        <p>Which Level of NCEA Math do you need to pass for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options"  id="correct3">Level 1 <br> <br>
+        <input type="radio" class="options" >Level 2 <br> <br>
+        <input type="radio" class="options" >Level 3 <br> <br>
+        <input type="radio" class="options" >You don't need Math <br>
+        <button class="Next" onclick="next(3)" >Next</button>    
+    </div>
+
+    <div class="container">
+        <p>Which Level of NCEA English do you need to pass for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" >Level 1 <br> <br>
+        <input type="radio" class="options" id="correct4">Level 2 <br> <br>
+        <input type="radio" class="options" >Level 3 <br> <br>
+        <input type="radio" class="options" >You don't need English <br>
+        <button class="Next" onclick="next(4)" >Next</button>   
+    </div>
+
+    <div class="container">
+        <p> In Cambridge, How many points do you need for University entrance?</p> <hr> <br>
+        <input type="radio" class="options" >100 <br> <br>
+        <input type="radio" class="options" id="correct5">120 <br> <br>
+        <input type="radio" class="options" >200 <br><br>
+        <input type="radio" class="options" >80 <br>
+        <button class="Next" onclick="next(5)" >Next</button>
+    </div>
+
+
+    <div class="container">
+       <p> What grade do you need to earn in IGCSE math for University Entrance? </p> <hr> <br>
+        <input type="radio" class="options" >B <br> <br>
+        <input type="radio" class="options" id="correct6">C <br> <br>
+        <input type="radio" class="options" >D <br> <br>
+        <input type="radio" class="options" >E <br>
+        <button class="Next" onclick="next(6)" >Next</button>
+    </div>
+
+
+    <div class="container">
+        <p>  How many D grades do you need for University entrance in cambridge? </p> <hr> <br>
+          <input type="radio" class="options" >4 <br> <br>
+          <input type="radio" class="options" >2 <br> <br>
+          <input type="radio" class="options" id="correct7">3 <br> <br>
+          <input type="radio" class="options" >1 <br>
+          <button class="Next" onclick="next(7)" >Next</button>
+      </div>
+
+
+    <div class="container">
+        <p>What grade do you need in AS English for University Entrance?</p> <hr> <br>
+        <input type="radio" class="options" id="correct8">D <br> <br>
+        <input type="radio" class="options" >B <br> <br>
+        <input type="radio" class="options" >C <br> <br>
+        <input type="radio" class="options" >E <br>
+        <button class="Next" onclick="next(8)">Next</button>   
+    </div>
+
+    <div class="container">
+       <p> Does getting University Entrance guarantee acceptance into all courses? </p> <hr> <br>
+        <input type="radio" class="options" >Yes, All courses accept the minimum UE <br> <br>
+        <input type="radio" class="options" id="correct9">No, Only some courses accept mimimum UE <br> <br>
+        <input type="radio" class="options" >Only certain Universities accept minimum UE <br> <br>
+        <input type="radio" class="options" >I dont know <br>
+        <button class="Next" onclick="next(9)" >Next</button> 
+    </div>
+
+    <div class="container">
+       <p> Do you need a rank score for ALL Universities? </p> <hr> <br>
+        <input type="radio" class="options" >I don't know <br> <br>
+        <input type="radio" class="options" > Yes, all Universities use rank scores <br> <br>
+        <input type="radio" class="options" >No, only Auckland University uses rank scores <br> <br>
+        <input type="radio" class="options" id="correct10">No, only some Universities <br>
+        <button class="Submit" onclick="result(10)" > Submit </button> 
+        <br>
+        <button class="Answers" onclick="checkAnswer()">Check Answers</button>
+    </div>
+
+    <div id="answers" class="answers">
+        <h1> These are the correct answers: </h1>
+        <p>Question 1:
+            In NCEA, How many credits do you need to achieve for University Entrance?
+            <br>
+            Option 1: 100
+            <br>
+            Option 2: 15
+            <br>
+            Option 3: 85
+            <br>
+            Correct Option: 60
+<br><br>
+            Question 2:
+            How many NCEA classes do you need to get 15 credits in for University Entrance?
+            <br>
+            Option 1: 5
+            <br>
+            Option 2: 1
+            <br>
+            Correct Option: 3
+            <br>
+            Option 4: 4
+<br><br>
+            Question 3:
+            Which Level of NCEA Math do you need to pass for University Entrance?
+            <br>
+            Correct Option : Level 1
+            <br>
+            Option 2: Level 2
+            <br>
+            Option 3: Level 3
+            <br>
+            Option 4: You don't need Math
+<br><br>
+            Question 4:
+            Which Level of NCEA English do you need to pass for University Entrance? 
+            <br>
+            Option 1: Level 1
+            <br>
+            Correct Option : Level 2
+            <br>
+            Option 3: Level 3
+            <br>
+            Option 4: You Don't need English
+<br><br>
+            Question 5:
+            In Cambridge, How many points do you need for University entrance?
+            <br>
+            Option 1: 100 
+            <br>
+            Correct Option : 120
+            <br>
+            Option 3: 200 
+            <br>
+            Option 4: 80
+<br><br>
+            Question 6:
+            What grade do you need to earn in IGCSE math for University Entrance?
+            <br>
+            Option 1: B
+            <br>
+            Correct Option : C
+            <br>
+            Option 3: D
+            <br>
+            Option 4: E
+<br><br>
+            Question 7:
+            How many D grades do you need for University entrance in cambridge?
+            <br>
+            Option 1: 4
+            <br>
+            Option 2: 2
+            <br>
+            Correct Option: 3
+            <br>
+            Option 4: 1
+<br><br>
+            Question 8:
+            What grade do you need in AS English for University Entrance?
+            <br>
+            Correct Option : D
+            <br>
+            Option 2: C
+            <br>
+            Option 3: B
+            <br>
+            Option 4: E
+<br><br>
+            Question 9:
+            Does getting University Entrance guarantee acceptance into all courses?
+            <br>
+            Option 1: Yes, All courses accept the minimum UE
+            <br>
+            Correct Option : No, Only some courses accept mimimum UE
+            <br>
+            Option 3: Only certain Universities accept minimum UE
+            <br>
+            Option 4: I dont know
+<br><br>
+            Question 10:
+            Do you need a rank score for ALL Universities?
+            <br>
+            Option 1: I don't know
+            <br>
+            Option 2: Yes, all Universities use rank scores
+            <br>
+            Option 3: No, only Auckland University uses rank scores
+            <br>
+            Correct Option : No, only some Universities
+            <br> 
+        </p>
+    </div>
+    
+
+</div>
+
+
+
+
+
+</div>
+
+
+<script>
+    
+document.getElementsByClassName('container')[0].style.display = "block";
+
+function next(id){
+    document.getElementsByClassName('container')[id-1].style.display = "none";
+    document.getElementsByClassName('container')[id].style.display = "block";
+} 
+
+
+
+function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct6').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct7').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct8').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct9').checked) {
+                score++;
+            } 
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            alert("your score is: "+ score);
+        }
+
+        var div = document.getElementById('answers');
+        var display = 0;
+        function checkAnswer(){
+            if(display == 1){
+                div.style.display = 'block';
+                display = 0;
+            }
+            else{
+                div.style.display = 'none';
+                display = 1;
+            }
+
+        }
+
+
+        
+        
+
+
+</script>
+
+    
+</body>
+</html>
